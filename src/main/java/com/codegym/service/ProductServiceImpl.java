@@ -30,8 +30,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void update(Product product) {
-        // Tim trong productList (== product.getId) ==> index
-
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).getId()==product.getId()){
                 productList.set(i, product);
